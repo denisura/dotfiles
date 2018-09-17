@@ -21,6 +21,7 @@ brew 'unrar'
 brew 'wget'
 brew 'yarn'
 brew 'youtube-dl'
+brew 'jmeter', args: ['with-plugins']
 
 cask '1password'
 cask 'firefox'
