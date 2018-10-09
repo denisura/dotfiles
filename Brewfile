@@ -22,6 +22,7 @@ brew 'wget'
 brew 'yarn'
 brew 'youtube-dl'
 brew 'jmeter', args: ['with-plugins']
+brew 'terraform'
 
 cask '1password'
 cask 'firefox'
