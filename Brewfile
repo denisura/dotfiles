@@ -45,7 +45,7 @@ cask 'visual-studio-code'
 cask 'vlc'
 
 # Try out Applications
-#cask 'appcleaner'
+cask 'appcleaner'
 #cask 'cheatsheet'
 #cask 'caffeine'
 #cask 'spectacle'
