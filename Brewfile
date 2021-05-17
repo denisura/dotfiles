@@ -34,6 +34,13 @@ cask 'suspicious-package'
 cask 'quicklookase'
 cask 'qlvideo'
 
+#Android Development
+cask android-sdk
+cask android-ndk
+
+#Development SDK
+cask flutter
+
 # Applications
 cask 'android-file-transfer'
 cask 'dropbox'
