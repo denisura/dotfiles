@@ -35,8 +35,7 @@ cask 'quicklookase'
 cask 'qlvideo'
 
 #Android Development
-cask android-sdk
-cask android-ndk
+cask android-studio
 
 #Development SDK
 cask flutter
