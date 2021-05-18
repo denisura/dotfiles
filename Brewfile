@@ -93,7 +93,7 @@ brew 'rsync'
 #brew 'thrift' # Thrift network serialization protocol; compare protobuf.
 #brew 'tldr' # TLDR provides simplified and community-driven man pages
 #brew 'tmux' # Tmux is a newer terminal multiplexer.
-brew 'unrar' # WinRAR provides compression/decompression for RAR and ZIP files.
+brew 'unar' # Decompression for RAR and ZIP files.
 brew 'unzip' # unzip is the classic command.
 #brew 'vtk' # Visualization Toolkit for manipulating and displaying scientific data
 brew 'wget'
