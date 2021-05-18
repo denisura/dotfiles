@@ -88,6 +88,7 @@ brew 'rsync'
 #brew 'siege' # Siege is an http load testing and benchmarking utility.
 #brew 'spaceman-diff'
 #brew 'spark'
+brew 'svn' # Subversion Source control. Used to pull fonts and code from SVN repos
 #brew 'terraform' # Terraform common configuration to launch infrastructure.
 #brew 'theora' # FF MPEG for video
 #brew 'thrift' # Thrift network serialization protocol; compare protobuf.
