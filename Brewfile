@@ -134,7 +134,6 @@ cask 'dropbox'
 #cask 'duet'
 #cask 'fluid'
 cask 'flutter'### Development SDK
-cask 'font-roboto-condensed' # FONTS
 cask 'font-roboto-mono-for-powerline'# FONTS
 cask 'font-roboto-mono'# FONTS
 cask 'font-roboto-slab'# FONTS
