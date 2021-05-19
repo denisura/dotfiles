@@ -71,7 +71,6 @@ brew 'n'
 #brew 'nagios' # Nagios IT infrastructure monitoring.
 #brew 'netcat' # Netcat is a networking utility for the TCP/IP protocol.
 #brew 'nmap' # nmap network mapper is a security scanner
-brew 'openjdk' # Java
 brew 'openssl' # OpenSSL is an open-source implementation of the SSL and TLS protocols.
 #brew 'p7zip'
 #brew 'pandoc' # Pandoc converts among various formats, such as Markdown and HTML
