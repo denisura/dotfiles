@@ -2,22 +2,22 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "800b9beab233994364390f47dd9d43ef9dda9d88"
+        "revision": "4611928a5850eed32e3845c863d738626225c163"
       },
       "homebrew/cask-drivers": {
-        "revision": "eb816658e943a67384f29b403048d4054ce7a397"
+        "revision": "3eea3fd7a3ee6622f3b65bdcb55d978dd39453b7"
       },
       "homebrew/cask-fonts": {
-        "revision": "0a077de554c8d2ddc055f6c92012291105c0eb5e"
+        "revision": "ab320b1e46f329c808a9ee54ac33353f3e8e10b9"
       },
       "homebrew/cask-versions": {
-        "revision": "49600851e69f4027ad19eadd4bdfdc58c34f780b"
+        "revision": "49210685119c5db37204ba29dd085a508bf64fce"
       },
       "homebrew/core": {
-        "revision": "fd2e45832c59f35a4f781cc3356d98faa5c73b18"
+        "revision": "f77598d0f9d0e793b78e308da6aa4ccab98d2b7b"
       },
       "homebrew/bundle": {
-        "revision": "52c901580516725372222afbfadf04f51bddddbe"
+        "revision": "10dd69f350afa58b4caa4dc060f83ec546ba115b"
       },
       "homebrew/services": {
         "revision": "dc6819a3bf7e1da180bde57043e4bfdef7f7109e"
@@ -533,11 +533,15 @@
             }
           }
         }
+      },
+      "jenv": {
+        "version": "0.5.4",
+        "bottle": false
       }
     },
     "cask": {
       "1password": {
-        "version": "7.8.2",
+        "version": "7.8.3",
         "options": {
           "full_name": "1password",
           "args": {
@@ -751,15 +755,24 @@
             "appdir": "/Applications"
           }
         }
+      },
+      "adoptopenjdk8": {
+        "version": "8,292:b10",
+        "options": {
+          "full_name": "adoptopenjdk8",
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
       }
     }
   },
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.1.7",
+        "HOMEBREW_VERSION": "3.1.8",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "fd2e45832c59f35a4f781cc3356d98faa5c73b18",
+        "Homebrew/homebrew-core": "f77598d0f9d0e793b78e308da6aa4ccab98d2b7b",
         "CLT": "12.5.0.0.1.1617976050",
         "Xcode": "12.5",
         "macOS": "11.3.1"

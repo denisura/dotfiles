@@ -53,6 +53,7 @@ brew 'docker' # Docker software cotainers to help distribute applications.
 #brew 'htop'
 #brew 'httperf'
 brew 'imagemagick'
+brew 'jenv' # manage Java installations and environments
 #brew 'jenkins' ## Continuous automation
 #brew 'jmeter', args: ['with-plugins']
 #brew 'jp2a'
@@ -103,6 +104,7 @@ brew 'youtube-dl'
 brew 'zsh' # Zsh is a shell designed for interactive use.
 brew 'zstd' # Zstandard is the best modern compression
 cask '1password'###  Applications
+cask 'adoptopenjdk8' #Java 8
 #cask 'alfred'
 #cask 'android-file-transfer'###  Applications
 #cask 'android-messages'
