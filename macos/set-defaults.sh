@@ -145,7 +145,15 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClic
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
 # Disable “natural” (Lion-style) scrolling
+<<<<<<< Updated upstream
 #defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
+=======
+<<<<<<< HEAD
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
+=======
+#defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
@@ -202,6 +210,7 @@ sudo pmset -b sleep 5
 
 # Set standby delay to 24 hours (default is 1 hour)
 sudo pmset -a standbydelay 86400
+<<<<<<< Updated upstream
 
 # Never go into computer sleep mode
 sudo systemsetup -setcomputersleep Off > /dev/null
@@ -226,6 +235,32 @@ defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
 
+=======
+
+# Never go into computer sleep mode
+sudo systemsetup -setcomputersleep Off > /dev/null
+
+# Hibernation mode
+# 0: Disable hibernation (speeds up entering sleep mode)
+# 3: Copy RAM to disk so the system state can still be restored in case of a
+#    power failure.
+sudo pmset -a hibernatemode 0
+
+###############################################################################
+# Screen                                                                      #
+###############################################################################
+
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Save screenshots to the desktop
+defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+
+# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+defaults write com.apple.screencapture type -string "png"
+
+>>>>>>> Stashed changes
 # Disable shadow in screenshots
 defaults write com.apple.screencapture disable-shadow -bool true
 
@@ -549,6 +584,30 @@ defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
 ###############################################################################
 
 # Disable send and reply animations in Mail.app
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+defaults write com.apple.mail DisableReplyAnimations -bool true
+defaults write com.apple.mail DisableSendAnimations -bool true
+
+# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+# Add the keyboard shortcut ⌘ + Enter to send an email in Mail.app
+defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\U21a9"
+
+# Display emails in threaded mode, sorted by date (oldest at the top)
+defaults write com.apple.mail DraftsViewerAttributes -dict-add "DisplayInThreadedMode" -string "yes"
+defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortedDescending" -string "yes"
+defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortOrder" -string "received-date"
+
+# Disable inline attachments (just show the icons)
+defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
+
+# Disable automatic spell checking
+defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
+=======
+>>>>>>> Stashed changes
 #defaults write com.apple.mail DisableReplyAnimations -bool true
 #defaults write com.apple.mail DisableSendAnimations -bool true
 
@@ -568,6 +627,10 @@ defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
 
 # Disable automatic spell checking
 #defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
+<<<<<<< Updated upstream
+=======
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
 
 ###############################################################################
 # Spotlight                                                                   #
@@ -758,7 +821,15 @@ defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool t
 ###############################################################################
 
 # Disable signing emails by default
+<<<<<<< Updated upstream
 #defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault -bool false
+=======
+<<<<<<< HEAD
+defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault -bool false
+=======
+#defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault -bool false
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
 
 ###############################################################################
 # Opera & Opera Developer                                                     #
@@ -773,30 +844,84 @@ defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2
 ###############################################################################
 
 # Start SizeUp at login
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
+
+# Don’t show the preferences window on next start
+defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
+=======
+>>>>>>> Stashed changes
 #defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
 
 # Don’t show the preferences window on next start
 #defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
+<<<<<<< Updated upstream
+=======
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
 
 ###############################################################################
 # Sublime Text                                                                #
 ###############################################################################
 
 # Install Sublime Text settings
+<<<<<<< Updated upstream
 #cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+=======
+<<<<<<< HEAD
+cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+=======
+#cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
 
 ###############################################################################
 # Spectacle.app                                                               #
 ###############################################################################
 
 # Set up my preferred keyboard shortcuts
+<<<<<<< Updated upstream
 #cp -r init/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
+=======
+<<<<<<< HEAD
+cp -r init/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
+=======
+#cp -r init/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
 
 ###############################################################################
 # Transmission.app                                                            #
 ###############################################################################
 
 # Use `~/Documents/Torrents` to store incomplete downloads
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
+defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Documents/Torrents"
+
+# Use `~/Downloads` to store completed downloads
+defaults write org.m0k.transmission DownloadLocationConstant -bool true
+
+# Don’t prompt for confirmation before downloading
+defaults write org.m0k.transmission DownloadAsk -bool false
+defaults write org.m0k.transmission MagnetOpenAsk -bool false
+
+# Don’t prompt for confirmation before removing non-downloading active transfers
+defaults write org.m0k.transmission CheckRemoveDownloading -bool true
+
+# Trash original torrent files
+defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
+
+# Hide the donate message
+defaults write org.m0k.transmission WarningDonate -bool false
+# Hide the legal disclaimer
+defaults write org.m0k.transmission WarningLegal -bool false
+=======
+>>>>>>> Stashed changes
 #defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
 #defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Documents/Torrents"
 
@@ -817,6 +942,10 @@ defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2
 #defaults write org.m0k.transmission WarningDonate -bool false
 # Hide the legal disclaimer
 #defaults write org.m0k.transmission WarningLegal -bool false
+<<<<<<< Updated upstream
+=======
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
 
 # IP block list.
 # Source: https://giuliomac.wordpress.com/2014/02/19/best-blocklist-for-transmission/
@@ -832,6 +961,30 @@ defaults write org.m0k.transmission RandomPort -bool true
 ###############################################################################
 
 # Disable smart quotes as it’s annoying for code tweets
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+defaults write com.twitter.twitter-mac AutomaticQuoteSubstitutionEnabled -bool false
+
+# Show the app window when clicking the menu bar icon
+defaults write com.twitter.twitter-mac MenuItemBehavior -int 1
+
+# Enable the hidden ‘Develop’ menu
+defaults write com.twitter.twitter-mac ShowDevelopMenu -bool true
+
+# Open links in the background
+defaults write com.twitter.twitter-mac openLinksInBackground -bool true
+
+# Allow closing the ‘new tweet’ window by pressing `Esc`
+defaults write com.twitter.twitter-mac ESCClosesComposeWindow -bool true
+
+# Show full names rather than Twitter handles
+defaults write com.twitter.twitter-mac ShowFullNames -bool true
+
+# Hide the app in the background if it’s not the front-most window
+defaults write com.twitter.twitter-mac HideInBackground -bool true
+=======
+>>>>>>> Stashed changes
 #defaults write com.twitter.twitter-mac AutomaticQuoteSubstitutionEnabled -bool false
 
 # Show the app window when clicking the menu bar icon
@@ -851,13 +1004,25 @@ defaults write org.m0k.transmission RandomPort -bool true
 
 # Hide the app in the background if it’s not the front-most window
 #defaults write com.twitter.twitter-mac HideInBackground -bool true
+<<<<<<< Updated upstream
+=======
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
 
 ###############################################################################
 # Tweetbot.app                                                                #
 ###############################################################################
 
 # Bypass the annoyingly slow t.co URL shortener
+<<<<<<< Updated upstream
 #defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
+=======
+<<<<<<< HEAD
+defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
+=======
+#defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
 
 ###############################################################################
 # Kill affected applications                                                  #

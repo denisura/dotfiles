@@ -2,7 +2,15 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
+<<<<<<< Updated upstream
         "revision": "4611928a5850eed32e3845c863d738626225c163"
+=======
+<<<<<<< HEAD
+        "revision": "e2db35dec85a3ccb0794dbd3d414daecd6beaa9e"
+=======
+        "revision": "4611928a5850eed32e3845c863d738626225c163"
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
       },
       "homebrew/cask-drivers": {
         "revision": "3eea3fd7a3ee6622f3b65bdcb55d978dd39453b7"
@@ -11,16 +19,37 @@
         "revision": "ab320b1e46f329c808a9ee54ac33353f3e8e10b9"
       },
       "homebrew/cask-versions": {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+        "revision": "84bdffed083131d7300dc87cddd7a36823936424"
+      },
+      "homebrew/core": {
+        "revision": "92f9cbe47779b4c7117e9daa954dfef4b1a8c2c8"
+=======
+>>>>>>> Stashed changes
         "revision": "49210685119c5db37204ba29dd085a508bf64fce"
       },
       "homebrew/core": {
         "revision": "f77598d0f9d0e793b78e308da6aa4ccab98d2b7b"
+<<<<<<< Updated upstream
+=======
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
       },
       "homebrew/bundle": {
         "revision": "10dd69f350afa58b4caa4dc060f83ec546ba115b"
       },
       "homebrew/services": {
+<<<<<<< Updated upstream
         "revision": "dc6819a3bf7e1da180bde57043e4bfdef7f7109e"
+=======
+<<<<<<< HEAD
+        "revision": "b9ea9597b9b6bf91fa3634fdf86116389161e485"
+=======
+        "revision": "dc6819a3bf7e1da180bde57043e4bfdef7f7109e"
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
       }
     },
     "brew": {
@@ -158,13 +187,43 @@
         }
       },
       "imagemagick": {
+<<<<<<< Updated upstream
         "version": "7.0.11-12_1",
+=======
+<<<<<<< HEAD
+        "version": "7.0.11-13_1",
+=======
+        "version": "7.0.11-12_1",
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "arm64_big_sur": {
               "cellar": "/opt/homebrew/Cellar",
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+              "url": "https://ghcr.io/v2/homebrew/core/imagemagick/blobs/sha256:00e47167fb272aff8ff1aba4889d84b9f2e86847bef76fe0d64095bcf4222aac",
+              "sha256": "00e47167fb272aff8ff1aba4889d84b9f2e86847bef76fe0d64095bcf4222aac"
+            },
+            "big_sur": {
+              "cellar": "/usr/local/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/imagemagick/blobs/sha256:4a3e7623371785e763e36984abd091874e966487c25a1731feaa7b817be4ba7c",
+              "sha256": "4a3e7623371785e763e36984abd091874e966487c25a1731feaa7b817be4ba7c"
+            },
+            "catalina": {
+              "cellar": "/usr/local/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/imagemagick/blobs/sha256:28206d9f9926e67e5bdd79e4ab3bf07a717d309b7fcf84eb296693423c10ac73",
+              "sha256": "28206d9f9926e67e5bdd79e4ab3bf07a717d309b7fcf84eb296693423c10ac73"
+            },
+            "mojave": {
+              "cellar": "/usr/local/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/imagemagick/blobs/sha256:b51a38de60be313476f3828a6b6b419ea610b39f84d6dd5132700462438e4b7d",
+              "sha256": "b51a38de60be313476f3828a6b6b419ea610b39f84d6dd5132700462438e4b7d"
+=======
+>>>>>>> Stashed changes
               "url": "https://ghcr.io/v2/homebrew/core/imagemagick/blobs/sha256:5f3c0ff4d82d752709e6705c37c805fd3759988beb54094b3252be4f24248653",
               "sha256": "5f3c0ff4d82d752709e6705c37c805fd3759988beb54094b3252be4f24248653"
             },
@@ -182,6 +241,10 @@
               "cellar": "/usr/local/Cellar",
               "url": "https://ghcr.io/v2/homebrew/core/imagemagick/blobs/sha256:100462d8143f92b85fa2422f83f6a0f88a687ad321c8cc701e4861982645c4fc",
               "sha256": "100462d8143f92b85fa2422f83f6a0f88a687ad321c8cc701e4861982645c4fc"
+<<<<<<< Updated upstream
+=======
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
             }
           }
         }
@@ -772,7 +835,15 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.1.8",
         "HOMEBREW_PREFIX": "/usr/local",
+<<<<<<< Updated upstream
         "Homebrew/homebrew-core": "f77598d0f9d0e793b78e308da6aa4ccab98d2b7b",
+=======
+<<<<<<< HEAD
+        "Homebrew/homebrew-core": "92f9cbe47779b4c7117e9daa954dfef4b1a8c2c8",
+=======
+        "Homebrew/homebrew-core": "f77598d0f9d0e793b78e308da6aa4ccab98d2b7b",
+>>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
+>>>>>>> Stashed changes
         "CLT": "12.5.0.0.1.1617976050",
         "Xcode": "12.5",
         "macOS": "11.3.1"
