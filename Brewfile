@@ -36,6 +36,7 @@ brew 'docker' # Docker software cotainers to help distribute applications.
 #brew 'freetype' # FreeType is a freely available software library to render fonts.
 #brew 'geckodriver' # Selenimum webdriver for Firefox browser
 #brew 'geoip'
+brew 'gh' # GitHub command-line tool
 #brew 'go' # Go programming language by Google; compare `C`.
 #brew 'google-app-engine'
 #brew 'google-perftools'
