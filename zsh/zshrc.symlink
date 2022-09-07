@@ -54,11 +54,3 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
-=======
-<<<<<<< HEAD
-=======
-
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
->>>>>>> 2f2fa3213a333444fd003b3333112acaac56b817
->>>>>>> Stashed changes
