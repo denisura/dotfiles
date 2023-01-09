@@ -22,8 +22,8 @@ brew 'ack'
 #brew 'consul' # Consul tool for discovering and configuring services in your infrastructure
 brew 'coreutils'
 brew 'curl', link: true
-brew 'docker-compose' # Compose is a tool for defining and running multi-container Docker applications.
-brew 'docker' # Docker software cotainers to help distribute applications.
+#brew 'docker-compose' # Compose is a tool for defining and running multi-container Docker applications.
+#brew 'docker' # Docker software cotainers to help distribute applications.
 #brew 'doxygen' # Doxygen parses source code documenation annotations
 #brew 'exif' ## Media-Related
 #brew 'exiftags' ## Media-Related
@@ -54,7 +54,7 @@ brew 'gh' # GitHub command-line tool
 #brew 'htop'
 #brew 'httperf'
 brew 'imagemagick'
-brew 'jenv' # manage Java installations and environments
+#brew 'jenv' # manage Java installations and environments
 #brew 'jenkins' ## Continuous automation
 #brew 'jmeter', args: ['with-plugins']
 #brew 'jp2a'
@@ -89,7 +89,7 @@ brew 'rsync'
 #brew 'siege' # Siege is an http load testing and benchmarking utility.
 #brew 'spaceman-diff'
 #brew 'spark'
-brew 'svn' # Subversion Source control. Used to pull fonts and code from SVN repos
+#brew 'svn' # Subversion Source control. Used to pull fonts and code from SVN repos
 #brew 'terraform' # Terraform common configuration to launch infrastructure.
 #brew 'theora' # FF MPEG for video
 #brew 'thrift' # Thrift network serialization protocol; compare protobuf.
@@ -104,14 +104,14 @@ brew 'youtube-dl'
 brew 'zsh' # Zsh is a shell designed for interactive use.
 brew 'zstd' # Zstandard is the best modern compression
 cask '1password'###  Applications
-cask 'adoptopenjdk8' #Java 8
+#cask 'adoptopenjdk8' #Java 8
 #cask 'alfred'
 #cask 'android-file-transfer'###  Applications
 #cask 'android-messages'
 #cask 'android-ndk'
 #cask 'android-platform-tools'
-cask 'android-sdk'
-cask 'android-studio'
+#cask 'android-sdk'
+#cask 'android-studio'
 #cask 'anki'
 cask 'appcleaner'###  Applications
 #cask 'arq'
@@ -131,11 +131,11 @@ cask 'appcleaner'###  Applications
 #cask 'codekit'
 #cask 'commandq'
 #cask 'dash' # Dash documentation browser and code snippet manager
-cask 'docker' # Docker assembles applications from components.
+#cask 'docker' # Docker assembles applications from components.
 cask 'dropbox'
 #cask 'duet'
 #cask 'fluid'
-cask 'flutter'### Development SDK
+#cask 'flutter'### Development SDK
 cask 'font-roboto-mono-for-powerline'# FONTS
 cask 'font-roboto-mono'# FONTS
 cask 'font-roboto-slab'# FONTS
@@ -182,7 +182,7 @@ cask 'quicklookase'### Quick Look plugins https://github.com/sindresorhus/quick-
 #cask 'superduper'
 #cask 'suspicious-package'### Quick Look plugins https://github.com/sindresorhus/quick-look-plugins
 #cask 'synergy' # Synergy screen sharing utility
-cask 'teamviewer'###  Applications
+#cask 'teamviewer'###  Applications
 #cask 'thisservice'
 #cask 'transmit'
 #cask 'unison' # Unison file synchronizer.
