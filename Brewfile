@@ -134,6 +134,7 @@ cask 'appcleaner'###  Applications
 #cask 'docker' # Docker assembles applications from components.
 cask 'dropbox'
 #cask 'duet'
+cask 'figma'
 #cask 'fluid'
 #cask 'flutter'### Development SDK
 cask 'font-roboto-mono-for-powerline'# FONTS
