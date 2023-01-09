@@ -141,6 +141,7 @@ cask 'font-roboto-mono-for-powerline'# FONTS
 cask 'font-roboto-mono'# FONTS
 cask 'font-roboto-slab'# FONTS
 cask 'font-roboto'# FONTS
+cask 'fontbase'
 #cask 'freemind' # Freemind mind map editor
 #cask 'freeplane'
 #cask 'ganttproject'
@@ -156,7 +157,7 @@ cask 'handbrake'###  Applications
 cask 'iterm2' # iTerm is our favorite terminal app.
 #cask 'joinme'
 #cask 'jumpcut'
-#cask 'keybase'###  Applications
+cask 'keybase'###  Applications
 #cask 'krita'
 #cask 'kube-solo' # Kubernetes Solo cluster for macOS.
 #cask 'launchy'
@@ -184,6 +185,7 @@ cask 'quicklookase'### Quick Look plugins https://github.com/sindresorhus/quick-
 #cask 'suspicious-package'### Quick Look plugins https://github.com/sindresorhus/quick-look-plugins
 #cask 'synergy' # Synergy screen sharing utility
 #cask 'teamviewer'###  Applications
+cask 'telegram'
 #cask 'thisservice'
 #cask 'transmit'
 #cask 'unison' # Unison file synchronizer.
