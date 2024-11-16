@@ -10,6 +10,7 @@ tap 'homebrew/bundle'
 tap 'homebrew/services'
 #tap 'wallix/awless' # AWS command line tools
 
+
 brew 'ack'
 #brew 'ansible' # Ansible is a simple way to automate apps and IT infrastructure.
 #brew 'automake' # Automake is a tool for automatically generating Makefile installation files.
@@ -89,7 +90,8 @@ brew 'rsync'
 #brew 'siege' # Siege is an http load testing and benchmarking utility.
 #brew 'spaceman-diff'
 #brew 'spark'
-#brew 'svn' # Subversion Source control. Used to pull fonts and code from SVN repos
+#brew 'stripe/stripe-cli/stripe'
+#brew 'stripe/stripe-mock/stripe-mock'
 #brew 'terraform' # Terraform common configuration to launch infrastructure.
 #brew 'theora' # FF MPEG for video
 #brew 'thrift' # Thrift network serialization protocol; compare protobuf.
@@ -100,10 +102,11 @@ brew 'unzip' # unzip is the classic command.
 #brew 'vtk' # Visualization Toolkit for manipulating and displaying scientific data
 brew 'wget'
 brew 'yarn'
-brew 'youtube-dl'
+brew 'yt-dlp'
 brew 'zsh' # Zsh is a shell designed for interactive use.
 brew 'zstd' # Zstandard is the best modern compression
-cask '1password'###  Applications
+
+cask '1password' ###  Applications
 #cask 'adoptopenjdk8' #Java 8
 #cask 'alfred'
 #cask 'android-file-transfer'###  Applications
@@ -113,7 +116,7 @@ cask '1password'###  Applications
 #cask 'android-sdk'
 #cask 'android-studio'
 #cask 'anki'
-cask 'appcleaner'###  Applications
+cask 'appcleaner' ###  Applications
 #cask 'arq'
 #cask 'atext'
 #cask 'backblaze-downloader'
@@ -131,6 +134,7 @@ cask 'appcleaner'###  Applications
 #cask 'codekit'
 #cask 'commandq'
 #cask 'dash' # Dash documentation browser and code snippet manager
+cask 'diffusionbee'
 #cask 'docker' # Docker assembles applications from components.
 cask 'dropbox'
 #cask 'duet'
@@ -148,8 +152,8 @@ cask 'fontbase'
 #cask 'gfxcardstatus'
 #cask 'gimp' # Gimp pixel-based image editor, similar to Adobe Photoshop
 #cask 'gitx'
-cask 'google-chrome'###  Applications
-cask 'handbrake'###  Applications
+cask 'google-chrome' ###  Applications
+cask 'handbrake' ###  Applications
 #cask 'harvest'
 #cask 'hockey'
 #cask 'imageoptim' # Image optimizer
@@ -157,7 +161,7 @@ cask 'handbrake'###  Applications
 cask 'iterm2' # iTerm is our favorite terminal app.
 #cask 'joinme'
 #cask 'jumpcut'
-cask 'keybase'###  Applications
+#cask 'keybase' ###  Applications
 #cask 'krita'
 #cask 'kube-solo' # Kubernetes Solo cluster for macOS.
 #cask 'launchy'
@@ -174,6 +178,7 @@ cask 'qlstephen'### Quick Look plugins https://github.com/sindresorhus/quick-loo
 cask 'qlvideo'### Quick Look plugins https://github.com/sindresorhus/quick-look-plugins
 cask 'quicklook-json'### Quick Look plugins https://github.com/sindresorhus/quick-look-plugins
 cask 'quicklookase'### Quick Look plugins https://github.com/sindresorhus/quick-look-plugins
+cask 'raycast'
 #cask 'rescuetime'
 #cask 'sequential'
 #cask 'shortcat'
