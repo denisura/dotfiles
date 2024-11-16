@@ -129,6 +129,7 @@ cask 'appcleaner' ###  Applications
 #cask 'caffeine'
 #cask 'calibre'
 #cask 'charles' # Charles: enables a developer to view HTTP traffic.
+cask 'chatgpt'
 #cask 'cheatsheet'
 #cask 'coconutbattery'
 #cask 'codekit'
@@ -168,6 +169,8 @@ cask 'iterm2' # iTerm is our favorite terminal app.
 #cask 'little-snitch'
 #cask 'macdown' # MacDown simple markdown editor
 #cask 'mark-text' # MarkText free open source markdown editor
+cask 'microsoft-office'
+cask 'onedrive'
 #cask 'paparazzi'
 #cask 'postman' # Postman: a complete API Development Environment.
 #cask 'pupil'
