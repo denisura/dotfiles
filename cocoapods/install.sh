@@ -1,2 +1,2 @@
- sudo gem install cocoapods
+# sudo gem install cocoapods
 
