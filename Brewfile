@@ -1,11 +1,6 @@
 cask_args appdir: '/Applications'
 
 # Tap homebrew
-tap 'homebrew/cask'
-tap 'homebrew/cask-drivers'
-tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-versions'
-tap 'homebrew/core'
 tap 'homebrew/bundle'
 tap 'homebrew/services'
 #tap 'wallix/awless' # AWS command line tools
@@ -170,12 +165,10 @@ cask 'iterm2' # iTerm is our favorite terminal app.
 #cask 'macdown' # MacDown simple markdown editor
 #cask 'mark-text' # MarkText free open source markdown editor
 cask 'microsoft-office'
-cask 'onedrive'
 #cask 'paparazzi'
 #cask 'postman' # Postman: a complete API Development Environment.
 #cask 'pupil'
 cask 'qlcolorcode' ### Quick Look plugins https://github.com/sindresorhus/quick-look-plugins
-cask 'qlimagesize'### Quick Look plugins https://github.com/sindresorhus/quick-look-plugins
 cask 'qlmarkdown'### Quick Look plugins https://github.com/sindresorhus/quick-look-plugins
 cask 'qlstephen'### Quick Look plugins https://github.com/sindresorhus/quick-look-plugins
 cask 'qlvideo'### Quick Look plugins https://github.com/sindresorhus/quick-look-plugins
