@@ -94,6 +94,7 @@ brew 'rsync'
 #brew 'tmux' # Tmux is a newer terminal multiplexer.
 brew 'unar' # Decompression for RAR and ZIP files.
 brew 'unzip' # unzip is the classic command.
+brew 'unison' # Unison file synchronizer.
 #brew 'vtk' # Visualization Toolkit for manipulating and displaying scientific data
 brew 'wget'
 brew 'yarn'
