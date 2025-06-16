@@ -70,7 +70,7 @@ brew 'n'
 #brew 'nmap' # nmap network mapper is a security scanner
 brew 'openssl' # OpenSSL is an open-source implementation of the SSL and TLS protocols.
 #brew 'p7zip'
-#brew 'pandoc' # Pandoc converts among various formats, such as Markdown and HTML
+brew 'pandoc' # Pandoc converts among various formats, such as Markdown and HTML
 #brew 'pkg-config', link: true # Tmux is a newer terminal multiplexer.
 #brew 'plantuml' # PlantUML markup text to diagram
 #brew 'prettyping' # prettyping: ping with colorful output and progress bars
