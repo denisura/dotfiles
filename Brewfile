@@ -132,7 +132,7 @@ cask 'chatgpt'
 #cask 'commandq'
 #cask 'dash' # Dash documentation browser and code snippet manager
 cask 'diffusionbee'
-#cask 'docker' # Docker assembles applications from components.
+cask 'docker' # Docker assembles applications from components.
 cask 'dropbox'
 #cask 'duet'
 cask 'figma'
@@ -168,6 +168,7 @@ cask 'iterm2' # iTerm is our favorite terminal app.
 cask 'microsoft-office'
 #cask 'paparazzi'
 #cask 'postman' # Postman: a complete API Development Environment.
+cask 'proton-mail' # Proton Mail email client
 #cask 'pupil'
 cask 'qlcolorcode' ### Quick Look plugins https://github.com/sindresorhus/quick-look-plugins
 cask 'qlmarkdown'### Quick Look plugins https://github.com/sindresorhus/quick-look-plugins
@@ -191,7 +192,8 @@ cask 'telegram'
 #cask 'thisservice'
 #cask 'transmit'
 #cask 'unison' # Unison file synchronizer.
-cask 'visual-studio-code'###  Applications
+#cask 'visual-studio-code'###  Applications
+cask 'cursor' # Cursor IDE
 cask 'vlc'###  Applications
 #cask 'wireshark-chmodbpf' # Wireshark-chmodbft enables regular users to capture network packets.
 #cask 'yed' # yEd is desktop application to generate high-quality diagrams
