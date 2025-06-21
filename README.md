@@ -66,6 +66,16 @@ defaults, and so on. Tweak this script, and occasionally run `dot` from
 time to time to keep your environment fresh and up-to-date. You can find
 this script in `bin/`.
 
+### playwright setup
+
+If you use tools that depend on Playwright browsers (like `vibe-tools`), the installation process automatically handles browser setup. However, if you encounter browser-related issues, you can run:
+
+```sh
+playwright-setup
+```
+
+This script ensures Playwright browsers are properly installed and creates compatibility symlinks to handle version mismatches that some tools might encounter.
+
 ## bugs
 
 I want this to work for everyone; that means when you clone it down it should

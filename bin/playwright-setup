@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+#
+# Setup Playwright browsers with proper cache location and version compatibility
+#
+# This script ensures Playwright browsers are installed in the correct location
+# and creates compatibility symlinks for version mismatches that tools like
+# vibe-tools might encounter.
+
+set -e
+
+echo "› Setting up Playwright browsers"
+
+# Check if playwright is installed
+if ! command -v playwright >/dev/null 2>&1; then
+  echo "❌ Playwright is not installed globally"
+  echo "   Run: yarn global add playwright"
+  exit 1
+fi
+
+# Create the MS cache directory if it doesn't exist
+PLAYWRIGHT_CACHE_DIR="$HOME/Library/Caches/ms-playwright"
+mkdir -p "$PLAYWRIGHT_CACHE_DIR"
+
+echo "Installing Playwright browsers to $PLAYWRIGHT_CACHE_DIR..."
+
+# Install browsers to the MS cache location (where vibe-tools expects them)
+if PLAYWRIGHT_BROWSERS_PATH="$PLAYWRIGHT_CACHE_DIR" playwright install --with-deps; then
+  echo "✅ Playwright browsers installed successfully"
+else
+  echo "❌ Failed to install Playwright browsers"
+  exit 1
+fi
+
+echo "Setting up version compatibility symlinks..."
+
+# Handle potential version mismatches by creating symlinks
+cd "$PLAYWRIGHT_CACHE_DIR"
+
+# Find all browser directories and create symlinks for common version numbers
+for browser_type in chromium_headless_shell chromium firefox webkit; do
+  for dir in ${browser_type}-*; do
+    if [[ -d "$dir" ]]; then
+      current_version=$(echo "$dir" | sed "s/${browser_type}-//")
+      echo "Found $browser_type version $current_version"
+      
+      # Create symlinks for a range of version numbers that tools might expect
+      # This covers common version ranges to prevent compatibility issues
+      case "$browser_type" in
+        "chromium_headless_shell"|"chromium")
+          version_range="1160 1161 1162 1163 1164 1165 1166 1167 1168 1169 1170 1171 1172 1173 1174 1175 1176 1177 1178 1179 1180 1181 1182 1183 1184 1185"
+          ;;
+        "firefox")
+          version_range="1480 1481 1482 1483 1484 1485 1486 1487 1488 1489 1490 1491 1492 1493 1494 1495"
+          ;;
+        "webkit")
+          version_range="2180 2181 2182 2183 2184 2185 2186 2187 2188 2189 2190"
+          ;;
+      esac
+      
+      for expected_version in $version_range; do
+        expected_dir="${browser_type}-$expected_version"
+        if [[ ! -e "$expected_dir" ]] && [[ "$expected_version" != "$current_version" ]]; then
+          ln -sf "$dir" "$expected_dir"
+          echo "  ✅ $expected_dir -> $dir"
+        fi
+      done
+      break # Only need to process the first (and likely only) version of each browser
+    fi
+  done
+done
+
+echo ""
+echo "✅ Playwright browser setup complete!"
+echo ""
+echo "Browser cache location: $PLAYWRIGHT_CACHE_DIR"
+echo "Installed browsers:"
+ls -la "$PLAYWRIGHT_CACHE_DIR" | grep "^d" | awk '{print "  - " $9}' | grep -v "^  - \.$" | grep -v "^  - \.\.$"
+
+echo ""
+echo "You can now use tools like vibe-tools that depend on Playwright browsers." 

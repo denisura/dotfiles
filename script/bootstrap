@@ -49,6 +49,24 @@ setup_gitconfig () {
   fi
 }
 
+setup_vibetools () {
+  if ! [ -f vibe-tools/vibe-tools.env.symlink ]
+  then
+    info 'setup vibe-tools configuration'
+    
+    user ' - Do you want to set up vibe-tools configuration? [y/N]'
+    read -e setup_vibe
+    
+    if [[ "$setup_vibe" =~ ^[Yy]$ ]]
+    then
+      cp vibe-tools/vibe-tools.env.symlink.example vibe-tools/vibe-tools.env.symlink
+      success 'vibe-tools configuration created'
+      echo "  Edit vibe-tools/vibe-tools.env.symlink to customize your environment variables"
+    else
+      success 'skipped vibe-tools setup'
+    fi
+  fi
+}
 
 link_file () {
   local src=$1 dst=$2
@@ -132,12 +150,21 @@ install_dotfiles () {
 
   for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
   do
-    dst="$HOME/.$(basename "${src%.*}")"
+    # Special handling for vibe-tools.env.symlink
+    if [[ "$(basename "$src")" == "vibe-tools.env.symlink" ]]; then
+      # Create ~/.vibe-tools directory if it doesn't exist
+      mkdir -p "$HOME/.vibe-tools"
+      dst="$HOME/.vibe-tools/.env"
+    else
+      dst="$HOME/.$(basename "${src%.*}")"
+    fi
+    
     link_file "$src" "$dst"
   done
 }
 
 setup_gitconfig
+setup_vibetools
 install_dotfiles
 
 # If we're on a Mac, let's install and setup homebrew.

@@ -1,0 +1,38 @@
+# Node CLI packages to install globally
+# Add packages one per line, comments are supported
+
+# Currently installed
+spoof
+vibe-tools
+playwright
+
+# Development tools
+# @vue/cli
+# create-react-app
+# @angular/cli
+# typescript
+# ts-node
+# nodemon
+# pm2
+
+# Utilities
+# http-server
+# serve
+# json-server
+# localtunnel
+# ngrok
+
+# Linting and formatting
+# eslint
+# prettier
+# jshint
+
+# Build tools
+# webpack-cli
+# parcel-bundler
+# rollup
+
+# Testing
+# jest
+# mocha
+# cypress 
