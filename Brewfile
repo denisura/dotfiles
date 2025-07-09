@@ -24,9 +24,9 @@ brew 'curl', link: true
 #brew 'exif' ## Media-Related
 #brew 'exiftags' ## Media-Related
 #brew 'exiftool' ## Media-Related
-#brew 'ffmpeg' # FF MPEG for video
-#brew 'ffmpeg2theora' # FF MPEG for video
-#brew 'ffmpegthumbnailer' # FF MPEG for video
+brew 'ffmpeg' # FF MPEG for video
+brew 'ffmpeg2theora' # FF MPEG for video
+brew 'ffmpegthumbnailer' # FF MPEG for video
 #brew 'flac' ## Media-Related
 #brew 'fontconfig' # Fontconfig is a library for configuring and customizing font access.
 #brew 'freetype' # FreeType is a freely available software library to render fonts.
