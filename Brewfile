@@ -33,7 +33,10 @@ brew 'ffmpegthumbnailer' # FF MPEG for video
 #brew 'geckodriver' # Selenimum webdriver for Firefox browser
 #brew 'geoip'
 brew 'gh' # GitHub command-line tool
-#brew 'go' # Go programming language by Google; compare `C`.
+brew 'go' # Go programming language by Google; compare `C`.
+brew 'goimports' # Go import tool
+brew 'goreleaser' # Go release tool
+brew 'golangci-lint' # Go linter for detecting bugs and enforcing code standards.
 #brew 'google-app-engine'
 #brew 'google-perftools'
 #brew 'google-sparsehash'
