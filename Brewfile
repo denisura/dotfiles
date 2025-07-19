@@ -41,7 +41,7 @@ brew 'golangci-lint' # Go linter for detecting bugs and enforcing code standards
 #brew 'google-perftools'
 #brew 'google-sparsehash'
 #brew 'google-sql-tool'
-#brew 'gpg' # GNU Privacy Guard (GnuPG) provides encryption as a free replacement for PGP.
+brew 'gpg' # used for signing commits
 #brew 'gradle' # Gradle is a Java build tool
 #brew 'graphicsmagick' # GraphicsMagick is the swiss army knife of image processing.
 #brew 'graphviz'
@@ -75,6 +75,7 @@ brew 'openssl' # OpenSSL is an open-source implementation of the SSL and TLS pro
 #brew 'p7zip'
 brew 'pandoc' # Pandoc converts among various formats, such as Markdown and HTML
 #brew 'pkg-config', link: true # Tmux is a newer terminal multiplexer.
+brew 'pinentry-mac' # Pinentry is a small collection of scripts which make gpg, pass, ssh, git etc. work with the pinentry program.
 #brew 'plantuml' # PlantUML markup text to diagram
 #brew 'prettyping' # prettyping: ping with colorful output and progress bars
 #brew 'protobuf-c' # Protocol buffers for serializing structured data; compare thrift.
