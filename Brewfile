@@ -174,6 +174,7 @@ cask 'microsoft-office' # Office productivity suite.
 #cask 'postman' # API development environment.
 cask 'proton-mail' # Proton Mail email client
 #cask 'pupil' # Eye tracking platform.
+cask 'qbittorrent' # BitTorrent client
 cask 'qlcolorcode' ### Quick Look plugins - Colorize source code https://github.com/sindresorhus/quick-look-plugins
 cask 'qlmarkdown' ### Quick Look plugins - Render Markdown https://github.com/sindresorhus/quick-look-plugins
 cask 'qlstephen' ### Quick Look plugins - Preview plain text https://github.com/sindresorhus/quick-look-plugins
